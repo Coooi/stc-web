@@ -6,14 +6,14 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>STC Construções</title>
 		<link href="css/stc.css" rel="stylesheet" />
-		<link rel="shortcut icon" href="http://i11.photobucket.com/albums/a180/frambles/stc-logo.png">
+		<link rel="shortcut icon" href="/stc/midia/stc-logo.png">
 		
 	</head>
 	<body>
 		
 		<div id="divLogo">
 			<a href="/stc/home.jsp">
-				<img id="stc-logo" src="http://i11.photobucket.com/albums/a180/frambles/stc-logo.png" style="width : 60px; height : 60px;">
+				<img id="stc-logo" src="/stc/midia/stc-logo.png" style="width : 60px; height : 60px;">
 			</a>
 		</div>
 		<div id="div-menu">
@@ -41,7 +41,7 @@
 			<div id="body">
 				
 				<div id="conteudo">
-					<jsp:include page="/apropriacao/novaApropriacao.jsp"></jsp:include>
+					
 				</div>
 			
 			</div>
