@@ -28,8 +28,37 @@ body{
 	height: 100%;
 }
 
+h1{
+	margin: 0;
+	padding: 0;
+	left: 40px;
+	color: rgb(2, 101, 192);
+	font-family: Arial, Helvetica, sans-serif;
+	text-shadow: 0 1px 0 #000;
+}
+
+.stcInput{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.stcHR1 {
+      color: #f00;
+      background-color: rgb(2, 101, 192);
+      height: 3px;
+      margin: 0;
+}
+
+.stcHR2 {
+      color: #f00;
+      background-color: rgb(2, 101, 192);
+      height: 2px;
+      margin: 0;
+      padding: 0;
+}
+
 #rodape{
-	background-color: rgb(2, 101, 192);
+	background-color: rgb(26, 72, 170);
 	height: 40px;
 	position: fixed;
 	bottom: 0px;
@@ -39,7 +68,7 @@ body{
 
 #body{
 	background-color: white;
-	padding: 20px 30px 20px 25px;
+	padding: 10px 30px 20px 10px;
 	position: absolute;
 	top: 68px;
 	bottom: 0px;
@@ -49,13 +78,18 @@ body{
 
 #conteudo{
 	background-color: #87CEEB;
-	border: 2px solid black;
-	opacity:0.4;
+	border-radius: 20px;
+	box-shadow: rgba(1, 1, 1, 0.701961) 0px 0px 15px 0px;
+	box-sizing: border-box;
+	opacity:1;
 	position: absolute;
-	bottom: 70px;
-	top: 30px;
+	top: 70px;
 	left: 40px;
 	right: 40px;
+	bottom: initial;
+	padding: 15px;
+	padding-bottom: 30px;
+	width: 640px;
 }
 
 /* Main */
@@ -228,4 +262,78 @@ body{
 
 .stcFormApropriacao{
 	padding: 10px;
+	color: black;
+	font: bold 14px/25px Arial, Helvetica;
+	text-decoration: none;
+	opacity:1;
 }
+
+.stcCSS3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+	padding: 5px 13px;
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#1ba2e0 20%,
+		#0c43a3);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#ffffff),
+		color-stop(0.20, #1ba2e0),
+		to(#0c43a3));
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	border: 1px solid #3c5d9e;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px -1px 0px rgba(255,255,255,0.7);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px -1px 0px rgba(255,255,255,0.7);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px -1px 0px rgba(255,255,255,0.7);
+	text-shadow:
+		0px -1px 1px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.3);
+		position: absolute;
+		margin-left: 520px;
+}
+
+#btnLancar:hover {
+  opacity: 0.8;
+}
+
+.stcArea{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	width: 580px;
+	height: 150px;
+	max-width: 580px;
+	max-height: 400px;
+}
+
+.stcCombo{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	width: 200px;
+	margin-right: 10px;
+}
+
+.stcDivPrazo{
+	background-color: deepskyblue;
+	border-radius: 10px;
+	box-shadow: rgba(1, 1, 1, 0.701961) 0px 0px 15px 0px;
+	box-sizing: border-box;
+	padding: 15px;
+	height: 130px;
+	width: 580px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	display: none;
+	padding: 5px;
+}
+
