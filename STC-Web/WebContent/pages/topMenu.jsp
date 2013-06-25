@@ -14,7 +14,7 @@
 		<ul id="menu">
 			<li><a id="btnApropriacao" href="#">Apropriação</a>
 				<ul>
-					<li><a href="/stc/apropriacao/novaApropriacao.jsp">Lançar</a></li>
+					<li><a href="/stc/apropriacao/novaApropriacao.jsp"><img alt="" src="/stc/midia/pencil16.svg" height="20px" width="20px" /> Lançar</a></li>
 					<li><a href="#">Consultar</a></li>
 				</ul></li>
 			<li><a href="#">Contas a Pagar</a>

@@ -4,7 +4,7 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<jsp:include page="/pages/header.jsp"></jsp:include>
+<c:import url="/pages/header.jsp"/>
 <script src="/stc/js/stcNovaApropriacao.js"></script>
 <script src="/stc/js/jquery.maskMoney.js"></script>
 
@@ -28,22 +28,34 @@
 						<tr>
 							<td>Data Entrada</td>
 							<td>Data Documento</td>
-							<td style="vertical-align: top;">Setor</td>
+							
 						</tr>
 						<tr>
-							<td><input type="text" id="dataEntrada" class="stcInput" /></td>
+							<td style="width: 350px;"><input type="text" id="dataEntrada" class="stcInput" /></td>
 							<td><input type="text" id="dataDocumento" class="stcInput" /></td>
+						</tr>
+						<tr>
+							<td style="vertical-align: top;">Setor</td>
+							<td style="vertical-align: top;">Tipo Documento</td>
+						</tr>
+						<tr>
 							<td style="vertical-align: top;"><select id="comboSetor"
 								size="1" name="comboSetor" class="stcCombo">
 									<option selected value="0">Ed. Nair Ataíde</option>
 									<option value="1">Ed. Blue Diamond</option>
 									<option value="2">Integral - Ouro Branco</option>
-							</select></td>
+								</select>
+							</td>
+							<td style="vertical-align: top;"><input type="radio"
+								id="radioTipoDoc" value="contabil" checked="checked" />
+								Contábil 
+								<input type="radio" id="radioTipoDoc"
+								value="naoContabil" /> Não Contábil
+							</td>
 						</tr>
 						<tr>
 							<td style="vertical-align: top;">Forma Pgto.</td>
 							<td>Valor</td>
-							<td style="vertical-align: top;">Tipo Documento</td>
 						</tr>
 						<tr>
 							<td style="vertical-align: top;"><select id="comboPgto"
@@ -53,11 +65,6 @@
 									<option value="entradaPrazo">Entrada + Prazo</option>
 							</select></td>
 							<td style="vertical-align: top;"><input type="text" id="valorDoc" class="stcInput"/></td>
-							<td style="vertical-align: top;"><input type="radio"
-								id="radioTipoDoc" value="contabil" checked="checked" />
-								Contábil 
-								<input type="radio" id="radioTipoDoc"
-								value="naoContabil" /> Não Contábil</td>
 						</tr>
 						<tr>
 							<td colspan="3">
@@ -91,18 +98,21 @@
 								</div>
 							</td>
 						</tr>
-						
 						<tr>
-							<td colspan="2">Descrição</td>
 							<td>Tipo de entrada</td>
 						</tr>
 						<tr>
-							<td colspan="2"><textarea id="descricao" rows="4" cols="30"
-									class="stcArea"></textarea></td>
 							<td style="vertical-align: top;"><input type="radio" name="grupoCD" 
 									id="radioCredito" value="credito" /> Crédito <input
 									type="radio" name="grupoCD" id="radioDebito" value="debito" checked="checked" />
 									Débito</td>
+						</tr>
+						<tr>
+							<td colspan="2">Descrição</td>
+						</tr>
+						<tr>
+							<td colspan="2"><textarea id="descricao" rows="4" cols="30"
+									class="stcArea"></textarea></td>
 						</tr>
 						<tr>
 							<td><input id="btnLancar" type="submit" name="submit"
@@ -116,7 +126,7 @@
 
 
 	<!-- RODAPE -->
-	<jsp:include page="/pages/rodape.jsp"></jsp:include>
+	<c:import  url="/pages/rodape.jsp"/>
 
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
