@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>  
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -9,7 +10,8 @@
 
 <body>
 	<!-- TOP MENU -->
-	<jsp:include page="/pages/topMenu.jsp"></jsp:include>
+	<c:import url="/pages/topMenu.jsp"></c:import>
+	
 
 	<!-- CONTEUDO -->
 	<div id="body">
@@ -19,39 +21,43 @@
 		</div>
 		<div id="conteudo">
 			<div id="divForm">
+			
 				<form name="formApropriacao" method="POST" action="textInput.jsp"
 					class="stcFormApropriacao">
-					<table width="60%" border="0" cellspacing="0" cellpadding="0">
+					<table width="90%" border="0" cellspacing="0" cellpadding="0">
 						<tr>
 							<td>Data Entrada</td>
 							<td>Data Documento</td>
+							<td style="vertical-align: top;">Setor</td>
 						</tr>
 						<tr>
 							<td><input type="text" id="dataEntrada" class="stcInput" /></td>
 							<td><input type="text" id="dataDocumento" class="stcInput" /></td>
-						</tr>
-						<tr>
-							<td style="vertical-align: top;">Setor</td>
-							<td style="vertical-align: top;">Tipo Documento</td>
-							<td style="vertical-align: top;">Forma Pgto.</td>
-						</tr>
-						<tr>
 							<td style="vertical-align: top;"><select id="comboSetor"
 								size="1" name="comboSetor" class="stcCombo">
 									<option selected value="0">Ed. Nair Ataíde</option>
 									<option value="1">Ed. Blue Diamond</option>
 									<option value="2">Integral - Ouro Branco</option>
 							</select></td>
-							<td style="vertical-align: top;"><input type="radio"
-								id="radioTipoDoc" value="contabil" checked="checked" />
-								Contábil <br> <input type="radio" id="radioTipoDoc"
-								value="naoContabil" /> Não Contábil</td>
+						</tr>
+						<tr>
+							<td style="vertical-align: top;">Forma Pgto.</td>
+							<td>Valor</td>
+							<td style="vertical-align: top;">Tipo Documento</td>
+						</tr>
+						<tr>
 							<td style="vertical-align: top;"><select id="comboPgto"
 								size="1" name="comboPgto" class="stcCombo">
 									<option selected value="aVista">À Vista</option>
 									<option value="prazo">Prazo</option>
 									<option value="entradaPrazo">Entrada + Prazo</option>
 							</select></td>
+							<td style="vertical-align: top;"><input type="text" id="valorDoc" class="stcInput"/></td>
+							<td style="vertical-align: top;"><input type="radio"
+								id="radioTipoDoc" value="contabil" checked="checked" />
+								Contábil 
+								<input type="radio" id="radioTipoDoc"
+								value="naoContabil" /> Não Contábil</td>
 						</tr>
 						<tr>
 							<td colspan="3">
@@ -85,22 +91,18 @@
 								</div>
 							</td>
 						</tr>
+						
 						<tr>
-							<td>Valor</td>
+							<td colspan="2">Descrição</td>
+							<td>Tipo de entrada</td>
 						</tr>
 						<tr>
-							<td><input type="text" id="valorDoc" class="stcInput"/></td>
-							<td style="vertical-align: top;"><input type="radio"
-								id="radioCredito" value="credito" /> Crédito <input
-								type="radio" id="radioDebito" value="debito" checked="checked" />
-								Débito</td>
-						</tr>
-						<tr>
-							<td>Descrição</td>
-						</tr>
-						<tr>
-							<td colspan="3"><textarea id="descricao" rows="4" cols="50"
+							<td colspan="2"><textarea id="descricao" rows="4" cols="30"
 									class="stcArea"></textarea></td>
+							<td style="vertical-align: top;"><input type="radio" name="grupoCD" 
+									id="radioCredito" value="credito" /> Crédito <input
+									type="radio" name="grupoCD" id="radioDebito" value="debito" checked="checked" />
+									Débito</td>
 						</tr>
 						<tr>
 							<td><input id="btnLancar" type="submit" name="submit"
