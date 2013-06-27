@@ -12,19 +12,20 @@
 	<div id="div-menu">
 		<!-- MENU -->
 		<ul id="menu">
-			<li><a id="btnApropriacao" href="#">Apropriação</a>
+			<li><a id="btnApropriacao" href="#"><span aria-hidden="true" data-icon="&#xe055;"></span> Apropriação</a>
 				<ul>
-					<li><a href="/stc/apropriacao/novaApropriacao.jsp"><img alt="" src="/stc/midia/pencil16.svg" height="20px" width="20px" /> Lançar</a></li>
-					<li><a href="#">Consultar</a></li>
+					<li><a href="/stc/apropriacao/novaApropriacao.jsp"><span aria-hidden="true" data-icon="&#xe006;"></span> Lançar</a></li>
+					<li><a href="/stc/apropriacao/consultaApropriacao.jsp"><span aria-hidden="true" data-icon="&#xe059;"></span> Consultar</a></li>
 				</ul></li>
-			<li><a href="#">Contas a Pagar</a>
+			<li><a href="#"><span aria-hidden="true" data-icon="&#xe00a;"></span> Contas a Pagar</a>
 				<ul>
-					<li><a href="/stc/apropriacao/novaApropriacao.jsp">Efetuar
-							Pgto.</a></li>
-					<li><a href="#">Consultar</a></li>
+					<li><a href="/stc/apropriacao/novaApropriacao.jsp"> <span aria-hidden="true" data-icon="&#xe047;"></span>
+					Efetuar	Pgto.</a>
+					</li>
+					<li><a href="#"><span aria-hidden="true" data-icon="&#xe059;"></span> Consultar</a></li>
 				</ul></li>
-			<li><a href="#">Caixa</a></li>
-			<li><a href="#">Documentos Contador</a></li>
+			<li><a href="#"><span aria-hidden="true" data-icon="&#xe079;"></span> Caixa</a></li>
+			<li><a href="#"><span aria-hidden="true" data-icon="&#xe006;"></span> Documentos Contador</a></li>
 		</ul>
 	</div>
 	<div id="div-logout">

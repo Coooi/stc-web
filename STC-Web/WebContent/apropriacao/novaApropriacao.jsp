@@ -19,15 +19,15 @@
 			<h1>Nova Apropriação</h1>
 			<hr class="stcHR1">
 		</div>
-		<div id="conteudo">
+		<div class="conteudo">
 			<div id="divForm">
 			
 				<form name="formApropriacao" method="POST" action="textInput.jsp"
 					class="stcFormApropriacao">
 					<table width="90%" border="0" cellspacing="0" cellpadding="0">
 						<tr>
-							<td>Data Entrada</td>
-							<td>Data Documento</td>
+							<td><span aria-hidden="true" data-icon="&#xe1ac;"></span> Data Entrada</td>
+							<td><span aria-hidden="true" data-icon="&#xe1ac;"></span> Data Documento</td>
 							
 						</tr>
 						<tr>

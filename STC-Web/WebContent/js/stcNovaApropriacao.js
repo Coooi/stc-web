@@ -3,33 +3,33 @@ $(function() {
 	$("#dataEntrada").datepicker(
 			{
 				dateFormat : 'dd/mm/yy',
-				dayNames : [ 'Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta',
-						'Sexta', 'Sábado', 'Domingo' ],
+				dayNames : [ 'Domingo', 'Segunda', 'TerÔøΩa', 'Quarta', 'Quinta',
+						'Sexta', 'SÔøΩbado', 'Domingo' ],
 				dayNamesMin : [ 'D', 'S', 'T', 'Q', 'Q', 'S', 'S', 'D' ],
 				dayNamesShort : [ 'Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex',
-						'Sáb', 'Dom' ],
-				monthNames : [ 'Janeiro', 'Fevereiro', 'Março', 'Abril',
+						'SÔøΩb', 'Dom' ],
+				monthNames : [ 'Janeiro', 'Fevereiro', 'MarÔøΩo', 'Abril',
 						'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro',
 						'Outubro', 'Novembro', 'Dezembro' ],
 				monthNamesShort : [ 'Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun',
 						'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez' ],
-				nextText : 'Próximo',
+				nextText : 'PrÔøΩximo',
 				prevText : 'Anterior'
 			});
 	$("#dataDocumento").datepicker(
 			{
 				dateFormat : 'dd/mm/yy',
-				dayNames : [ 'Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta',
-						'Sexta', 'Sábado', 'Domingo' ],
+				dayNames : [ 'Domingo', 'Segunda', 'TerÔøΩa', 'Quarta', 'Quinta',
+						'Sexta', 'SÔøΩbado', 'Domingo' ],
 				dayNamesMin : [ 'D', 'S', 'T', 'Q', 'Q', 'S', 'S', 'D' ],
 				dayNamesShort : [ 'Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex',
-						'Sáb', 'Dom' ],
-				monthNames : [ 'Janeiro', 'Fevereiro', 'Março', 'Abril',
+						'SÔøΩb', 'Dom' ],
+				monthNames : [ 'Janeiro', 'Fevereiro', 'MarÔøΩo', 'Abril',
 						'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro',
 						'Outubro', 'Novembro', 'Dezembro' ],
 				monthNamesShort : [ 'Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun',
 						'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez' ],
-				nextText : 'Próximo',
+				nextText : 'PrÔøΩximo',
 				prevText : 'Anterior'
 			});
 

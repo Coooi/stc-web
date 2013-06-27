@@ -12,7 +12,8 @@
 
 	<!-- CONTEUDO -->
 	
-	<div id="body" style="height: 100%;"></div>
+	<div id="body" style="height: 100%;">
+	</div>
 
 	<!-- RODAPE -->
 	<c:import url="/pages/rodape.jsp"></c:import>

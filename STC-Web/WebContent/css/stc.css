@@ -53,9 +53,17 @@ h1{
 	margin: 0;
 	padding: 0;
 	left: 40px;
-	color: rgb(2, 101, 192);
+	color: rgb(0, 43, 134);
 	font-family: Arial, Helvetica, sans-serif;
 	text-shadow: 0 1px 0 #000;
+}
+
+h4{
+	margin: 0;
+	padding: 0;
+	margin-left: 10px;
+	color: rgb(0, 43, 134);
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .stcInput{
@@ -66,7 +74,7 @@ h1{
 
 .stcHR1 {
       color: #f00;
-      background-color: rgb(2, 101, 192);
+      background-color: rgb(0, 43, 134);
       height: 3px;
       margin: 0;
 }
@@ -80,7 +88,7 @@ h1{
 }
 
 #rodape{
-	background-color: rgb(26, 72, 170);
+	background-color: rgb(0, 43, 134);
 	width: 100%;
 	height: 40px;
 	position: relative;
@@ -92,19 +100,32 @@ h1{
 #body{
 	background-color: white;
 	padding: 70px 30px 20px 20px;
-	margin-bottom: 50px;
 	position: relative;
+	height: 100%;
 }
 
-#conteudo{
+.conteudo{
 	background-color: #D3D8DA;
 	border-radius: 8px;
-	box-shadow: rgba(1, 1, 1, 0.701961) 0px 0px 15px 0px;
+	box-shadow: rgba(1, 1, 1, 0.701961) 0px 0px 5px 0px;
 	box-sizing: border-box;
 	opacity:1;
 	padding-top: 15px;
 	width: 100%;
-	margin-top: 15px;
+	margin-top: 10px;
+	border: solid;
+	border-width: 1px;
+}
+
+.conteudo-arg{
+	background-color: #D3D8DA;
+	border-radius: 8px;
+	box-shadow: rgba(1, 1, 1, 0.701961) 0px 0px 5px 0px;
+	box-sizing: border-box;
+	opacity:1;
+	border: solid;
+	border-width: 1px;
+	margin-top: 8px;
 }
 
 /* Main */
@@ -284,11 +305,11 @@ h1{
 	background: -webkit-gradient(
 		linear, left top, left bottom, 
 		from(#ffffff),
-		color-stop(0.20, #1ba2e0),
-		to(#0c43a3));
+		color-stop(0.20, #031D6F),
+		to(#02245F));
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
-	border-radius: 20px;
+	border-radius: 6px;
 	border: 1px solid #3c5d9e;
 	-moz-box-shadow:
 		0px 1px 3px rgba(000,000,000,0.5),
@@ -337,3 +358,150 @@ h1{
 div.ui-datepicker{
  font-size:13px;
 }
+
+
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('/stc/midia/svg/icomoon.eot');
+	src:url('/stc/midia/svg/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('/stc/midia/svg/icomoon.woff') format('woff'),
+		url('/stc/midia/svg/icomoon.ttf') format('truetype'),
+		url('/stc/midia/svg/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-pencil, .icon-list, .icon-pencil-2, .icon-list-2, .icon-chart, .icon-file, .icon-file-2, .icon-upload, .icon-drawer, .icon-loop {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+#divTable{
+	padding: 10px;
+}
+
+.tbConsultaAprop {
+	margin:0px;padding:0px;
+	width:100%;
+	border:1px solid #000000;
+	
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+	
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+	
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+	
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}
+.tbConsultaAprop table{
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+}
+.tbConsultaAprop tr:last-child td:last-child {
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+}
+.tbConsultaAprop table tr:first-child td:first-child {
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}
+.tbConsultaAprop table tr:first-child td:last-child {
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+}
+.tbConsultaAprop tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+}
+.tbConsultaAprop tr:hover td{
+	
+}
+.tbConsultaAprop tr:nth-child(odd){ background-color:#aad4ff; }
+.tbConsultaAprop tr:nth-child(even)    { background-color:#ffffff; }.tbConsultaAprop td{
+	vertical-align:middle;
+	
+	
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:left;
+	padding:7px;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+}
+.tbConsultaAprop tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}
+.tbConsultaAprop tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}
+.tbConsultaAprop tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.tbConsultaAprop tr:first-child td{
+		background:-o-linear-gradient(bottom, #005fbf 5%, #003f7f 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #005fbf), color-stop(1, #003f7f) );
+	background:-moz-linear-gradient( center top, #005fbf 5%, #003f7f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#005fbf", endColorstr="#003f7f");	background: -o-linear-gradient(top,#005fbf,003f7f);
+
+	background-color:#005fbf;
+	border:0px solid #000000;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#ffffff;
+}
+.tbConsultaAprop tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #005fbf 5%, #003f7f 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #005fbf), color-stop(1, #003f7f) );
+	background:-moz-linear-gradient( center top, #005fbf 5%, #003f7f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#005fbf", endColorstr="#003f7f");	background: -o-linear-gradient(top,#005fbf,003f7f);
+
+	background-color:#005fbf;
+}
+.tbConsultaAprop tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.tbConsultaAprop tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
+
