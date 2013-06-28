@@ -23,45 +23,53 @@
 			<div id="divForm">
 				<form name="formApropriacao" method="POST" action="textInput.jsp"
 					class="stcFormApropriacao">
-					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<table id="tbArgConsultaAprop" >
 						<tr>
-							<td><span aria-hidden="true" data-icon="&#xe1ac;"></span>
-								Data Entrada:</td>
-							<td><span aria-hidden="true" data-icon="&#xe1ac;"></span>
-								Data Documento:</td>
 							<td style="vertical-align: top;">Setor:</td>
+							<td><span aria-hidden="true" data-icon="&#xe1ac;"></span>
+								Data Início:</td>
+							<td><span aria-hidden="true" data-icon="&#xe1ac;"></span>
+								Data Fim:</td>
 							<td>Palavra-chave:</td>
+							<td></td>
 
 						</tr>
 						<tr>
-							<td style="width: 350px;"><input type="text"
-								id="dataEntrada" class="stcInput" /></td>
-							<td><input type="text" id="dataDocumento" class="stcInput" /></td>
 							<td style="vertical-align: top;"><select id="comboSetor"
 								size="1" name="comboSetor" class="stcCombo">
 									<option selected value="0">Ed. Nair Ataíde</option>
 									<option value="1">Ed. Blue Diamond</option>
 									<option value="2">Integral - Ouro Branco</option>
+									<option value="3">Adm. Central</option>
 							</select></td>
+							<td><input type="text"
+								id="dataEntrada" class="stcInput" /></td>
+							<td><input type="text" id="dataDocumento" class="stcInput" /></td>
 							<td><input type="text" id="palavraChave" class="stcInput" /></td>
+							<td><input id="btnPesquisar" type="submit" name="submit"
+								value="Pesquisar" class="stcCSS3"></td>
 						</tr>
 					</table>
 				</form>
 			</div>
 		</div>
+		
 		<div class="conteudo">
-			<h4>Apropriações</h4>
+			<h4 style="float: left;">Apropriações</h4>
 			<div id="divTable">
+			<a href="/stc/apropriacao/novaApropriacao.jsp">
+			<input id="btnNovoAprop" type="submit" name="submit" style="float: right; position: relative;"
+										value="Novo" class="stcCSS3" ></a>
 				 <table class="tbConsultaAprop">
                     <tr>
                         <td>
-                            Title 1
+                            Data Entrada
                         </td>
                         <td >
-                            Title 2
+                            Valor
                         </td>
                         <td>
-                            Title 3
+                            Descrição
                         </td>
                     </tr>
                     <tr>

@@ -26,8 +26,8 @@
 					class="stcFormApropriacao">
 					<table width="90%" border="0" cellspacing="0" cellpadding="0">
 						<tr>
-							<td><span aria-hidden="true" data-icon="&#xe1ac;"></span> Data Entrada</td>
-							<td><span aria-hidden="true" data-icon="&#xe1ac;"></span> Data Documento</td>
+							<td><span aria-hidden="true" data-icon="&#xe1ac;"></span> Data Lançamento</td>
+							<td><span aria-hidden="true" data-icon="&#xe1ac;"></span> Data Emissão</td>
 							
 						</tr>
 						<tr>
@@ -41,15 +41,16 @@
 						<tr>
 							<td style="vertical-align: top;"><select id="comboSetor"
 								size="1" name="comboSetor" class="stcCombo">
-									<option selected value="0">Ed. Nair Ataíde</option>
-									<option value="1">Ed. Blue Diamond</option>
-									<option value="2">Integral - Ouro Branco</option>
+									<option value="0">Adm. Central</option>
+									<option selected value="1">Ed. Nair Ataíde</option>
+									<option value="2">Ed. Blue Diamond</option>
+									<option value="3">Integral - Ouro Branco</option>
 								</select>
 							</td>
-							<td style="vertical-align: top;"><input type="radio"
+							<td style="vertical-align: top;"><input type="radio" name="groupContabil"
 								id="radioTipoDoc" value="contabil" checked="checked" />
 								Contábil 
-								<input type="radio" id="radioTipoDoc"
+								<input type="radio" id="radioTipoDoc" name="groupContabil" 
 								value="naoContabil" /> Não Contábil
 							</td>
 						</tr>
