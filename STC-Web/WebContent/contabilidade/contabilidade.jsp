@@ -5,9 +5,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <c:import url="/pages/header.jsp" />
-<link href="/stc/css/apropriacao.css" rel="stylesheet" />
-<script src="/stc/js/stcNovaApropriacao.js"></script>
+<link href="/stc/css/contabil.css" rel="stylesheet" />
+<script src="/stc/js/contabilidade.js"></script>
 <script src="/stc/js/jquery.maskMoney.js"></script>
+
 
 <body>
 	<!-- TOP MENU -->
@@ -17,20 +18,18 @@
 	<!-- CONTEUDO -->
 	<div id="body">
 		<div>
-			<h1>Consulta Apropriação</h1>
+			<h1>Documentos para Contabilidade</h1>
 			<hr class="stcHR1">
 		</div>
 		<div class="conteudo-arg">
 			<div id="divForm">
 				<form name="formApropriacao" method="POST" action="textInput.jsp"
 					class="stcFormApropriacao">
-					<table id="tbArgConsultaAprop" >
+					<table id="tbArgConsultaCaixa" >
 						<tr>
 							<td style="vertical-align: top;">Setor:</td>
 							<td><span aria-hidden="true" data-icon="&#xe1ac;"></span>
-								Data Início:</td>
-							<td><span aria-hidden="true" data-icon="&#xe1ac;"></span>
-								Data Fim:</td>
+								Data Ref.:</td>
 							<td>Palavra-chave:</td>
 							<td></td>
 
@@ -43,10 +42,8 @@
 									<option value="2">Integral - Ouro Branco</option>
 									<option value="3">Adm. Central</option>
 							</select></td>
-							<td><input type="text"
-								id="dataEntrada" class="stcInput" /></td>
-							<td><input type="text" id="dataDocumento" class="stcInput" /></td>
-							<td><input type="text" id="palavraChave" class="stcInput" style="width: 250px;"/></td>
+							<td><input type="text"	id="dataRef" class="stcInput" /></td>
+							<td><input type="text" id="palavraChave" class="stcInput" style="width: 250px;" /></td>
 							<td><input id="btnPesquisar" type="submit" name="submit"
 								value="Pesquisar" class="stcCSS3"></td>
 						</tr>
@@ -56,65 +53,77 @@
 		</div>
 		
 		<div class="conteudo">
-			<h4 style="float: left;">Apropriações</h4>
+			<h4 style="float: left;">Documentos</h4>
 			<div id="divTable">
-			<a href="/stc/apropriacao/novaApropriacao.jsp">
-			<input id="btnNovoAprop" type="submit" name="submit" style="float: right; position: relative;"
-										value="Novo" class="stcCSS3" ></a>
-				 <table class="tbConsultaAprop">
+				 <table class="tbConsultaContabil">
                     <tr>
                         <td>
                             Data Entrada
                         </td>
-                        <td>
+                        <td >
                             Descrição
                         </td>
-                         <td >
+                        <td >
                             Valor
+                        </td>
+                        <td >
+                            Status
                         </td>
                     </tr>
                     <tr>
                         <td >
                             27/06/2013
                         </td>
-                        <td>
-                           	Teste, teste, teste.
+                         <td >
+                            Teste teste teste.
                         </td>
                         <td>
                             R$ 300,00
                         </td>
+                        <td >
+                            Entregue
+                        </td>
                     </tr>
                     <tr>
                         <td >
-                            27/06/2013
+                            28/06/2013
                         </td>
-                        <td>
-                            Teste, teste, teste.
+                        <td >
+                            Teste teste teste.
                         </td>
                         <td>
                             R$ 400,00
                         </td>
+                         <td >
+                            Pendente
+                        </td>
                     </tr>
                     <tr>
                         <td >
-                            27/06/2013
+                            29/06/2013
                         </td>
-                        <td>
-                            Teste, teste, teste.
+                        <td >
+                            Teste teste teste.
                         </td>
                         <td>
                             R$ 500,00
                         </td>
+                         <td >
+                            Pendente
+                        </td>
                     </tr>
                     <tr>
                         <td >
-                            27/06/2013
+                            30/06/2013
                         </td>
-                        <td>
-                            Teste, teste, teste.
+                        <td >
+                            Teste teste teste.
                         </td>
                         <td>
                             R$ 1000,00
+                        </td>
+                         <td >
+                            Entregue
                         </td>
                     </tr>
                 </table>
@@ -129,7 +138,7 @@
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
 			var currentDate = new Date();
-			$("#arg-dataEntrada").datepicker("setDate", currentDate);
+			$("#dataRef").datepicker("setDate", currentDate);
 		});
 	</script>
 </body>

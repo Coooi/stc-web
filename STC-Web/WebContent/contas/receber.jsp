@@ -5,8 +5,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <c:import url="/pages/header.jsp" />
-<link href="/stc/css/apropriacao.css" rel="stylesheet" />
-<script src="/stc/js/stcNovaApropriacao.js"></script>
+<link href="/stc/css/receber.css" rel="stylesheet" />
+<script src="/stc/js/contas.js"></script>
 <script src="/stc/js/jquery.maskMoney.js"></script>
 
 <body>
@@ -17,14 +17,14 @@
 	<!-- CONTEUDO -->
 	<div id="body">
 		<div>
-			<h1>Consulta Apropriação</h1>
+			<h1>Contas a Receber</h1>
 			<hr class="stcHR1">
 		</div>
 		<div class="conteudo-arg">
 			<div id="divForm">
 				<form name="formApropriacao" method="POST" action="textInput.jsp"
 					class="stcFormApropriacao">
-					<table id="tbArgConsultaAprop" >
+					<table id="tbArgConsultaReceber" >
 						<tr>
 							<td style="vertical-align: top;">Setor:</td>
 							<td><span aria-hidden="true" data-icon="&#xe1ac;"></span>
@@ -44,8 +44,8 @@
 									<option value="3">Adm. Central</option>
 							</select></td>
 							<td><input type="text"
-								id="dataEntrada" class="stcInput" /></td>
-							<td><input type="text" id="dataDocumento" class="stcInput" /></td>
+								id="arg-dataInicio" class="stcInput" /></td>
+							<td><input type="text" id="arg-dataFim" class="stcInput" /></td>
 							<td><input type="text" id="palavraChave" class="stcInput" style="width: 250px;"/></td>
 							<td><input id="btnPesquisar" type="submit" name="submit"
 								value="Pesquisar" class="stcCSS3"></td>
@@ -56,65 +56,77 @@
 		</div>
 		
 		<div class="conteudo">
-			<h4 style="float: left;">Apropriações</h4>
+			<h4 style="float: left;">Movimentação</h4>
 			<div id="divTable">
-			<a href="/stc/apropriacao/novaApropriacao.jsp">
-			<input id="btnNovoAprop" type="submit" name="submit" style="float: right; position: relative;"
-										value="Novo" class="stcCSS3" ></a>
-				 <table class="tbConsultaAprop">
+				 <table class="tbConsultaReceber">
                     <tr>
                         <td>
                             Data Entrada
                         </td>
-                        <td>
-                            Descrição
-                        </td>
-                         <td >
+                        <td >
                             Valor
+                        </td>
+                        <td >
+                            Status
+                        </td>
+                        <td>
+                            
                         </td>
                     </tr>
                     <tr>
                         <td >
                             27/06/2013
-                        </td>
-                        <td>
-                           	Teste, teste, teste.
                         </td>
                         <td>
                             R$ 300,00
                         </td>
+                        <td >
+                            A ser pago
+                        </td>
+                        <td>
+                            <a href="#"><input id="btnPagar" type="submit" name="submit" value="Receber" class="stcCSS3" ></a>
+                        </td>
                     </tr>
                     <tr>
                         <td >
-                            27/06/2013
-                        </td>
-                        <td>
-                            Teste, teste, teste.
+                            28/06/2013
                         </td>
                         <td>
                             R$ 400,00
                         </td>
+                         <td >
+                            Pago
+                        </td>
+                        <td>
+                            <a href="#"><input id="btnPagar" type="submit" name="submit" value="Receber" class="stcCSS3" ></a>
+                        </td>
                     </tr>
                     <tr>
                         <td >
-                            27/06/2013
-                        </td>
-                        <td>
-                            Teste, teste, teste.
+                            29/06/2013
                         </td>
                         <td>
                             R$ 500,00
                         </td>
+                         <td >
+                            Status
+                        </td>
+                        <td>
+                            <a href="#"><input id="btnPagar" type="submit" name="submit" value="Receber" class="stcCSS3" ></a>
+                        </td>
                     </tr>
                     <tr>
                         <td >
-                            27/06/2013
-                        </td>
-                        <td>
-                            Teste, teste, teste.
+                            30/06/2013
                         </td>
                         <td>
                             R$ 1000,00
+                        </td>
+                         <td >
+                            Status
+                        </td>
+                        <td>
+                            <a href="#"><input id="btnPagar" type="submit" name="submit" value="Receber" class="stcCSS3" ></a>
                         </td>
                     </tr>
                 </table>
@@ -129,7 +141,7 @@
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
 			var currentDate = new Date();
-			$("#arg-dataEntrada").datepicker("setDate", currentDate);
+			$("#arg-dataInicio").datepicker("setDate", currentDate);
 		});
 	</script>
 </body>

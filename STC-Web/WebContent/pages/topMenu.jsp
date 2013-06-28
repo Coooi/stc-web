@@ -19,20 +19,14 @@
 				</ul></li>
 			<li><a href="#"><span aria-hidden="true" data-icon="&#xe00a;"></span> Contas</a>
 				<ul>
-					<li><a href="/stc/apropriacao/novaApropriacao.jsp"> <span aria-hidden="true" data-icon="&#xe047;"></span>
+					<li><a href="/stc/contas/pagar.jsp"> <span aria-hidden="true" data-icon="&#xe047;"></span>
 					Pagar</a>
 					</li>
-					<li><a href="#"><span aria-hidden="true" data-icon="&#xe044;"></span> Receber</a></li>
+					<li><a href="/stc/contas/receber.jsp"><span aria-hidden="true" data-icon="&#xe06f;"></span> Receber</a></li>
 				</ul></li>
-			<li><a href="#"><span aria-hidden="true" data-icon="&#xe079;"></span> Caixa</a></li>
-			<li><a href="#"><span aria-hidden="true" data-icon="&#xe006;"></span> Documentos Contador</a></li>
-			<li><a href="#"><span aria-hidden="true" data-icon="&#xe00a;"></span> Setores</a>
-			<ul>
-					<li><a href="/stc/setores/novoSetor.jsp"> <span aria-hidden="true" data-icon="&#xe047;"></span>
-					Adicionar</a>
-					</li>
-					<li><a href="#"><span aria-hidden="true" data-icon="&#xe044;"></span> Consultar</a></li>
-				</ul></li>
+			<li><a href="/stc/caixa/caixa.jsp"><span aria-hidden="true" data-icon="&#xe079;"></span> Caixa</a></li>
+			<li><a href="/stc/contabilidade/contabilidade.jsp"><span aria-hidden="true" data-icon="&#xe006;"></span> Documentos Contador</a></li>
+			<li><a href="/stc/setores/setores.jsp"><span aria-hidden="true" data-icon="&#xe020;"></span> Setores</a></li>
 		</ul>
 	</div>
 	<div id="div-logout">
