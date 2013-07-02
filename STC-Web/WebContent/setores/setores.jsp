@@ -8,6 +8,10 @@
 <!-- HEADER -->
 <c:import url="/pages/header.jsp"/>
 
+<!-- CSS -->
+<link href="/stc/css/setores.css" rel="stylesheet" />
+
+<!-- BODY -->
 <body>
 	<!-- TOP MENU -->
 	<c:import url="/pages/topMenu.jsp"></c:import>
@@ -43,7 +47,7 @@
 		<div class="conteudo">
 			<h4 style="float: left;">Setores</h4>
 			<div id="divTable">
-				 <table class="tbConsultaAprop">
+				 <table class="tbConsultaSetores">
                     <tr>
                         <td>
                             Setor
