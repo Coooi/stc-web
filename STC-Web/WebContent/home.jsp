@@ -23,7 +23,9 @@
 		jQuery(document).ready(function() {
 			jQuery("#btnApropriacao").on("click", function(event) {
 				alert('oi');
+				
 			});
+
 		});
 	</script>
 </body>
