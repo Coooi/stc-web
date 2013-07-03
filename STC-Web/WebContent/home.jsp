@@ -8,7 +8,7 @@
 
 <body>
 	<!-- TOP MENU -->
-	<<c:import url="/pages/topMenu.jsp"></c:import>
+	<c:import url="/pages/topMenu.jsp"></c:import>
 
 	<!-- CONTEUDO -->
 	
