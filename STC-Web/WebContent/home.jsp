@@ -21,7 +21,8 @@
 	<script type="text/javascript"
 		src="http://code.jquery.com/jquery-1.9.1.min.js">
 		jQuery(document).ready(function() {
-			jQuery("#btnApropriacao").on("click", function(event) {				
+			jQuery("#btnApropriacao").on("click", function(event) {
+				alert('oi de volta');				
 			});
 		});
 	</script>
