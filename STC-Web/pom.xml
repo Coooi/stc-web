@@ -11,6 +11,12 @@
       <version>1.2.1</version>
     </dependency>
     <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>3.0.1</version>
+        <scope>provided</scope>
+	</dependency>
+    <dependency>
 		<groupId>taglibs</groupId>
 		<artifactId>standard</artifactId>
 		<version>1.0.6</version>

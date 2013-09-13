@@ -30,9 +30,9 @@
 		</ul>
 	</div>
 	<div id="div-logout">
-	<a href="http://www.uol.com.br" >
-		<input id="btnSair" type="submit" name="submit" value="Sair"
-			class="stcCSS3" />
-		</a>
+		<a id="emailUser">${pageContext.request.remoteUser}</a>
+		<a href="/stc/logout" >
+			<input id="btnSair" type="submit" name="submit" value="Sair"
+				class="stcCSS3" /></a>
 	</div>
 </div>

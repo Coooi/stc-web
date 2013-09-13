@@ -44,7 +44,6 @@
 }
 
 body, html{
-	padding: 0;
 	margin: 0;
 	height: 100%;
 }
@@ -106,14 +105,14 @@ h4{
 .conteudo{
 	background-color: #D3D8DA;
 	border-radius: 8px;
+	border: solid;
+	border-width: 1px;
 	box-shadow: rgba(1, 1, 1, 0.701961) 0px 0px 5px 0px;
 	box-sizing: border-box;
 	opacity:1;
 	padding-top: 15px;
 	width: 100%;
 	margin-top: 10px;
-	border: solid;
-	border-width: 1px;
 }
 
 .conteudo-arg{
@@ -277,6 +276,13 @@ h4{
 #emailRodape{
 	float: right;
 	padding: 10px;
+	color: white;
+	font: bold 13px/25px Arial, Helvetica;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #000;
+}
+
+#emailUser{
 	color: white;
 	font: bold 13px/25px Arial, Helvetica;
 	text-decoration: none;
