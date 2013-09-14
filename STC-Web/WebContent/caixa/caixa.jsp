@@ -24,7 +24,7 @@
 			<div id="divForm">
 				<form name="formApropriacao" method="POST" action="textInput.jsp"
 					class="stcFormApropriacao">
-					<table id="tbArgConsultaCaixa" >
+					<table id="tbArgConsultaCaixa"  >
 						<tr>
 							<td style="vertical-align: top;">Setor:</td>
 							<td><span aria-hidden="true" data-icon="&#xe1ac;"></span>
@@ -37,27 +37,29 @@
 						</tr>
 						<tr>
 							<td style="vertical-align: top;"><select id="comboSetor"
-								size="1" name="comboSetor" class="stcCombo">
+								size="0" name="comboSetor" class="stcCombo" style="height: 29px;">
 									<option selected value="0">Ed. Nair Ataíde</option>
 									<option value="1">Ed. Blue Diamond</option>
 									<option value="2">Integral - Ouro Branco</option>
 									<option value="3">Adm. Central</option>
 							</select></td>
-							<td><input type="text"
-								id="arg-dataInicio" class="stcInput" /></td>
-							<td><input type="text" id="arg-dataFim" class="stcInput" /></td>
+							<td><input type="text" id="arg-dataInicio" class="stcInput" style="width: 100px;"/></td>
+							<td><input type="text" id="arg-dataFim" class="stcInput" style="width: 100px;"/></td>
 							<td><input type="text" id="palavraChave" class="stcInput" style="width: 250px;" /></td>
-							<td><input id="btnPesquisar" type="submit" name="submit"
-								value="Pesquisar" class="stcCSS3"></td>
+							<td><input id="btnPesquisar" type="submit" name="submit" style="margin-left: 20px; margin-bottom: 10px;"
+								value="Pesquisar" class="btn btn-primary"></td>
 						</tr>
 					</table>
 				</form>
 			</div>
 		</div>
 		
-		<div class="conteudo">
+		<div class="conteudoTabela">
 			<h4 style="float: left;">Movimentação</h4>
 			<div id="divTable">
+			<a href="#">
+				<input id="btnRelatorio" type="submit" name="submit" style="float: right; position: relative;"
+										value="Gerar relatório" class="btn btn-info" onclick="window.print()" ></a>
 				 <table class="tbConsultaCaixa">
                     <tr>
                         <td>

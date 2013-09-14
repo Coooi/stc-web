@@ -15,7 +15,6 @@
 	top: 0;
 	right: 0;
 	left: 0;
-	position: fixed;
 	z-index: 80;
 }
 
@@ -32,7 +31,7 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 70px;
-	height: 20px;
+	height: 25px;
 	margin-bottom: 20px;
 }
 
@@ -44,7 +43,6 @@
 }
 
 body, html{
-	margin: 0;
 	height: 100%;
 }
 
@@ -60,7 +58,7 @@ h1{
 h4{
 	margin: 0;
 	padding: 0;
-	margin-left: 10px;
+	margin-left: 20px;
 	color: rgb(0, 43, 134);
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -86,20 +84,25 @@ h4{
       padding: 0;
 }
 
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 #rodape{
-	background-color: rgb(0, 43, 134);
+	background-color: black;
 	width: 100%;
 	height: 40px;
-	position: relative;
+	position: absolute;
 	bottom: 0;
-	left: 0;
 	padding-bottom: 5px;
 }
 
 #body{
 	background-color: white;
-	padding: 80px 30px 20px 20px;
+	padding: 20px 30px 50px 20px;
 	position: relative;
+	min-height: 70%;
 }
 
 .conteudo{
@@ -110,9 +113,29 @@ h4{
 	box-shadow: rgba(1, 1, 1, 0.701961) 0px 0px 5px 0px;
 	box-sizing: border-box;
 	opacity:1;
-	padding-top: 15px;
 	width: 100%;
 	margin-top: 10px;
+	position: relative;
+	width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.conteudoTabela{
+	background-color: #D3D8DA;
+	border-radius: 8px;
+	border: solid;
+	border-width: 1px;
+	box-shadow: rgba(1, 1, 1, 0.701961) 0px 0px 5px 0px;
+	box-sizing: border-box;
+	opacity:1;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 100%;
+	margin-top: 10px;
+	position: relative;
 }
 
 .conteudo-arg{
@@ -124,6 +147,7 @@ h4{
 	border: solid;
 	border-width: 1px;
 	margin-top: 8px;
+	height: 78px;
 }
 
 /* Main */
@@ -145,7 +169,7 @@ h4{
 	height: 25px;
 	padding: 0 25px;
 	color: #999;
-	font: bold 13px/25px Arial, Helvetica;
+	font: bold 15px/25px Arial, Helvetica;
 	text-decoration: none;
 	text-shadow: 0 1px 0 #000;
 }
@@ -170,8 +194,8 @@ h4{
     padding: 0;    
     display: none;
     position: absolute;
-    top: 35px;
-    left: 10px;
+    top: 36px;
+    left: 17px;
     z-index: 99999;    
     background: #444;
     background: -moz-linear-gradient(#444, #111);
@@ -273,7 +297,7 @@ h4{
 * html #menu             { zoom: 1; } /* IE6 */
 *:first-child+html #menu { zoom: 1; } /* IE7 */
 
-#emailRodape{
+#dataRodape{
 	float: right;
 	padding: 10px;
 	color: white;
@@ -294,39 +318,7 @@ h4{
 	color: black;
 	font: bold 14px/25px Arial, Helvetica;
 	text-decoration: none;
-	opacity:1;
-}
-
-.stcCSS3 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
-	font-size: 12px;
-	color: #ffffff;
-	padding: 5px 13px;
-	background: -moz-linear-gradient(
-		top,
-		#ffffff 0%,
-		#1ba2e0 20%,
-		#0c43a3);
-	background: -webkit-gradient(
-		linear, left top, left bottom, 
-		from(rgb(7, 46, 90)),
-		color-stop(0.20, #031D6F),
-		to(#02245F));
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	border-radius: 4px;
-	border: 1px solid #3c5d9e;
-	-moz-box-shadow:
-		0px 1px 3px rgba(000,000,000,0.5),
-		inset 0px -1px 0px rgba(255,255,255,0.7);
-	text-shadow:
-		0px -1px 1px rgba(000,000,000,0.2),
-		0px 1px 0px rgba(255,255,255,0.3);
-}
-
-.stcCSS3:hover {
-  opacity: 0.8;
+	padding-left: 20px;
 }
 
 .stcArea{
@@ -340,7 +332,7 @@ h4{
 
 .stcCombo{
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 16px;
+	font-size: 15px;
 	width: 200px;
 	margin-right: 10px;
 }
@@ -406,7 +398,6 @@ you can use the generic selector below, but it's slower:
 }
 
 #divTable{
-	padding: 10px;
 	padding-top: 0;
 }
 

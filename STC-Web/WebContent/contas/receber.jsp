@@ -37,7 +37,7 @@
 						</tr>
 						<tr>
 							<td style="vertical-align: top;"><select id="comboSetor"
-								size="1" name="comboSetor" class="stcCombo">
+								size="1" name="comboSetor" class="stcCombo" style="height: 29px;">
 									<option selected value="0">Ed. Nair Ataíde</option>
 									<option value="1">Ed. Blue Diamond</option>
 									<option value="2">Integral - Ouro Branco</option>
@@ -47,15 +47,15 @@
 								id="arg-dataInicio" class="stcInput" /></td>
 							<td><input type="text" id="arg-dataFim" class="stcInput" /></td>
 							<td><input type="text" id="palavraChave" class="stcInput" style="width: 250px;"/></td>
-							<td><input id="btnPesquisar" type="submit" name="submit"
-								value="Pesquisar" class="stcCSS3"></td>
+							<td><input id="btnPesquisar" type="submit" name="submit" style="margin-left: 20px; margin-bottom: 10px;"
+								value="Pesquisar" class="btn btn-primary"></td>
 						</tr>
 					</table>
 				</form>
 			</div>
 		</div>
 		
-		<div class="conteudo">
+		<div class="conteudoTabela">
 			<h4 style="float: left;">Movimentação</h4>
 			<div id="divTable">
 				 <table class="tbConsultaReceber">
@@ -84,7 +84,7 @@
                             A ser pago
                         </td>
                         <td>
-                            <a href="#"><input id="btnPagar" type="submit" name="submit" value="Receber" class="stcCSS3" ></a>
+                            <a href="#"><input id="btnPagar" type="submit" name="submit" value="Receber" class="btn btn-success" ></a>
                         </td>
                     </tr>
                     <tr>
@@ -98,7 +98,6 @@
                             Pago
                         </td>
                         <td>
-                            <a href="#"><input id="btnPagar" type="submit" name="submit" value="Receber" class="stcCSS3" ></a>
                         </td>
                     </tr>
                     <tr>
@@ -112,7 +111,7 @@
                             Status
                         </td>
                         <td>
-                            <a href="#"><input id="btnPagar" type="submit" name="submit" value="Receber" class="stcCSS3" ></a>
+                            <a href="#"><input id="btnPagar" type="submit" name="submit" value="Receber" class="btn btn-success" ></a>
                         </td>
                     </tr>
                     <tr>
@@ -126,7 +125,7 @@
                             Status
                         </td>
                         <td>
-                            <a href="#"><input id="btnPagar" type="submit" name="submit" value="Receber" class="stcCSS3" ></a>
+                            <a href="#"><input id="btnPagar" type="submit" name="submit" value="Receber" class="btn btn-success" ></a>
                         </td>
                     </tr>
                 </table>

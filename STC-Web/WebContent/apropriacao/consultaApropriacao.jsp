@@ -37,7 +37,7 @@
 						</tr>
 						<tr>
 							<td style="vertical-align: top;"><select id="comboSetor"
-								size="1" name="comboSetor" class="stcCombo">
+								size="1" name="comboSetor" class="stcCombo" style="height: 29px;"	>
 									<option selected value="0">Ed. Nair Ataíde</option>
 									<option value="1">Ed. Blue Diamond</option>
 									<option value="2">Integral - Ouro Branco</option>
@@ -46,23 +46,33 @@
 							<td><input type="text"
 								id="dataEntrada" class="stcInput" /></td>
 							<td><input type="text" id="dataDocumento" class="stcInput" /></td>
-							<td><input type="text" id="palavraChave" class="stcInput" style="width: 250px;"/></td>
-							<td><input id="btnPesquisar" type="submit" name="submit"
-								value="Pesquisar" class="stcCSS3"></td>
+							<td><input type="text" id="palavraChave" class="stcInput"/></td>
+							<td><input id="btnPesquisar" type="submit" style="margin-left: 20px; margin-bottom: 10px;" name="submit"
+								value="Pesquisar" class="btn btn-primary"></td>
 						</tr>
 					</table>
 				</form>
 			</div>
 		</div>
 		
-		<div class="conteudo">
+		<div class="conteudoTabela">
 			<h4 style="float: left;">Apropriações</h4>
 			<div id="divTable">
 			<a href="/stc/apropriacao/novaApropriacao.jsp">
-			<input id="btnNovoAprop" type="submit" name="submit" style="float: right; position: relative;"
-										value="Novo" class="stcCSS3" ></a>
+			<p style="float: right;">
+  				<button class="btn btn-danger" type="button"><span aria-hidden="true" data-icon="&#xe0d2;"/> Excluir</button>
+  				<button class="btn btn-primary" type="button"><span aria-hidden="true" data-icon="&#xe0d7;"/> Nova Apropriação</button>
+			</p>
+<!-- 			<a href="#">  -->
+<!-- 					<input id="btnRemover" type="submit" name="submit" style="float: right; position: relative;" -->
+<!-- 											value="Excluir" class="btn btn-danger" ></a>   -->
+<!-- 			<input id="btnNovoAprop" type="submit" name="submit" style="float: right; position: relative;" -->
+<!-- 										value="Nova Apropriação" class="btn btn-primary" ></a> -->
 				 <table class="tbConsultaAprop">
                     <tr>
+                   		<td>
+                    		<input type="checkbox" value="del">
+                        </td>
                         <td>
                             Data Entrada
                         </td>
@@ -74,6 +84,9 @@
                         </td>
                     </tr>
                     <tr>
+                    	<td>
+                    		<input type="checkbox" value="del">
+                        </td>
                         <td >
                             27/06/2013
                         </td>
@@ -85,6 +98,9 @@
                         </td>
                     </tr>
                     <tr>
+                    	<td>
+                    		<input type="checkbox" value="del">
+                        </td>
                         <td >
                             27/06/2013
                         </td>
@@ -96,6 +112,9 @@
                         </td>
                     </tr>
                     <tr>
+                    	<td>
+                    		<input type="checkbox" value="del">
+                        </td>
                         <td >
                             27/06/2013
                         </td>
@@ -107,6 +126,9 @@
                         </td>
                     </tr>
                     <tr>
+                    	<td>
+                    		<input type="checkbox" value="del">
+                        </td>
                         <td >
                             27/06/2013
                         </td>

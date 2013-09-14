@@ -24,6 +24,8 @@
 			
 				<form name="formApropriacao" method="POST" action="textInput.jsp"
 					class="stcFormApropriacao">
+					<fieldset>
+    				<legend>Laçamento</legend>
 					<table width="90%" border="0" cellspacing="0" cellpadding="0">
 						<tr>
 							<td><span aria-hidden="true" data-icon="&#xe1ac;"></span> Data Lançamento</td>
@@ -40,7 +42,7 @@
 						</tr>
 						<tr>
 							<td style="vertical-align: top;"><select id="comboSetor"
-								size="1" name="comboSetor" class="stcCombo">
+								size="1" name="comboSetor" class="stcCombo" style="height: 29px;">
 									<option value="0">Adm. Central</option>
 									<option selected value="1">Ed. Nair Ataíde</option>
 									<option value="2">Ed. Blue Diamond</option>
@@ -48,9 +50,9 @@
 								</select>
 							</td>
 							<td style="vertical-align: top;"><input type="radio" name="groupContabil"
-								id="radioTipoDoc" value="contabil" checked="checked" />
+								id="radioTipoDoc" value="contabil" checked="checked" style="vertical-align: baseline;"/>
 								Contábil 
-								<input type="radio" id="radioTipoDoc" name="groupContabil" 
+								<input type="radio" id="radioTipoDoc" name="groupContabil" style="vertical-align: baseline;" 
 								value="naoContabil" /> Não Contábil
 							</td>
 						</tr>
@@ -60,7 +62,7 @@
 						</tr>
 						<tr>
 							<td style="vertical-align: top;"><select id="comboPgto"
-								size="1" name="comboPgto" class="stcCombo">
+								size="1" name="comboPgto" class="stcCombo" style="height: 29px;">
 									<option selected value="aVista">À Vista</option>
 									<option value="prazo">Prazo</option>
 									<option value="entradaPrazo">Entrada + Prazo</option>
@@ -103,10 +105,11 @@
 							<td>Tipo de entrada</td>
 						</tr>
 						<tr>
-							<td style="vertical-align: top;"><input type="radio" name="grupoCD" 
-									id="radioCredito" value="credito" /> Crédito <input
-									type="radio" name="grupoCD" id="radioDebito" value="debito" checked="checked" />
-									Débito</td>
+							<td style="vertical-align: top;">
+								<input type="radio" name="grupoCD" id="radioCredito" style="vertical-align: baseline;"
+									value="credito" /> Crédito 
+								<input style="vertical-align: baseline;" type="radio" name="grupoCD" id="radioDebito" 
+									value="debito" checked="checked" />	Débito</td>
 						</tr>
 						<tr>
 							<td colspan="2">Descrição</td>
@@ -116,10 +119,11 @@
 									class="stcArea"></textarea></td>
 						</tr>
 						<tr>
-							<td><input id="btnLancar" type="submit" name="submit"
-								value="Lançar" class="stcCSS3"></td>
+							<td><i class="icon-ban-circle"></i><input id="btnLancar" type="submit" name="submit"
+								value="Lançar" class="btn btn-success"></td>
 						</tr>
 					</table>
+					</fieldset>
 				</form>
 			</div>
 		</div>

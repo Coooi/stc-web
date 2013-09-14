@@ -18,37 +18,50 @@
 	
 
 	<!-- CONTEUDO -->
-	<div id="body" style="height: 100%;">
+	<div id="body">
 		<div>
 			<h1>Setores</h1>
 			<hr class="stcHR1">
 		</div>
-		<div class="conteudo-arg">
+		<div class="conteudo-arg" style="height: 142px;">
 			<div id="divForm">
 			
 				<form name="formApropriacao" method="POST" action="textInput.jsp"
 					class="stcFormApropriacao">
-					<table width="90%" border="0" cellspacing="0" cellpadding="0">
+					<fieldset>
+					<legend>Novo Setor</legend>
+					<table width="70%" border="0" cellspacing="0" cellpadding="0">
 						<tr>
-							<td style="vertical-align: top;">Novo do Setor</td>
+							<td style="vertical-align: top;">Nome</td>
+							<td style="vertical-align: top;">Descrição</td>
 						</tr>
 						<tr>
-							<td style="vertical-align: top;"><input type="text" id="nomeSetor" class="stcInput"
-												style="margin-right: 15px; width: 400px;" /></td>
-						</tr>
-						<tr>
-							<td><input id="btnSalvar" type="submit" name="submit"
-								value="Salvar" class="stcCSS3"></td>
+							<td style="vertical-align: top;">
+                                <input type="text" id="nomeSetor" class="stcInput" style="margin-right: 15px; width: 300px;" />
+                            </td>
+							<td style="vertical-align: top;">
+                                <input type="text" id="nomeSetor" class="stcInput" style="margin-right: 5px; width: 300px;" />
+							</td>
+							<td>
+                                <button class="btn btn-success" type="button" style="margin-bottom: 10px; min-width: 84px;"><span aria-hidden="true" data-icon="&#xe0d3;"/> Salvar</button>
+                            </td>
 						</tr>
 					</table>
+					</fieldset>
 				</form>
 			</div>
 		</div>
-		<div class="conteudo">
+		<div class="conteudoTabela">
 			<h4 style="float: left;">Setores</h4>
 			<div id="divTable">
+				<p style="float: right;">
+	  				<button class="btn btn-danger" type="button"><span aria-hidden="true" data-icon="&#xe0d2;"/> Excluir</button>
+				</p>
 				 <table class="tbConsultaSetores">
                     <tr>
+                     	<td>
+                    		<input type="checkbox" value="del">
+                        </td>
                         <td>
                             Setor
                         </td>
@@ -57,35 +70,47 @@
                         </td>
                     </tr>
                     <tr>
+                    	<td>
+  							<input type="checkbox" value="del">
+                        </td>
                         <td >
-                            Row 1
+                            Adm. Central
                         </td>
                         <td>
-                            Row 1
+                            Outros
                         </td>
                     </tr>
                     <tr>
+                   		<td>
+                    		<input type="checkbox" value="del">
+                        </td>
                         <td >
-                            Row 2
+                            Ed. Nair Ataide II
                         </td>
                         <td>
-                            Row 2
+                            Inicio: 30/07/2010
                         </td>
                     </tr>
                     <tr>
+                    	<td>
+                    		<input type="checkbox" value="del">
+                        </td>
                         <td >
-                            Row 2
+                            Ed. Blue Diamond
                         </td>
                         <td>
-                            Row 2
+                            Inicio: 30/05/2012
                         </td>
                     </tr>
                     <tr>
+                     	<td>
+                    		<input type="checkbox" value="del">
+                        </td>
                         <td >
-                            Row 3
+                            Integral - Ouro Branco
                         </td>
                         <td>
-                            Row 3
+                            Inicio: 30/08/12 - Termino: 30/04/2013
                         </td>
                     </tr>
                 </table>

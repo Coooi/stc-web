@@ -21,8 +21,8 @@
 			    <input type="password" class="stcInput" size="16" name="j_password">
 			    <p><p>
 			    <div style="margin-left: 100px;">
-				    <input type="submit" class="stcButton" value="Entrar">
-				    <input type="reset" class="stcButton" value="Limpar">
+				    <input type="submit" class="btn btn-primary" value="Entrar">
+				    <input type="reset" class="btn btn-inverse" value="Limpar">
 			    </div>
 			</form>
 		</div>
