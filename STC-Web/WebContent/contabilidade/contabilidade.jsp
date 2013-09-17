@@ -25,7 +25,7 @@
 			<div id="divForm">
 				<form name="formApropriacao" method="POST" action="textInput.jsp"
 					class="stcFormApropriacao">
-					<table id="tbArgConsultaCaixa" >
+					<table id="tbArgConsultaContabil" >
 						<tr>
 							<td style="vertical-align: top;">Setor:</td>
 							<td><span aria-hidden="true" data-icon="&#xe1ac;"></span>
@@ -42,7 +42,7 @@
 									<option value="2">Integral - Ouro Branco</option>
 									<option value="3">Adm. Central</option>
 							</select></td>
-							<td><input type="text"	id="dataRef" class="stcInput" /></td>
+							<td><input type="text"	id="dataRef" class="stcInput" style="width: 120px;" /></td>
 							<td><input type="text" id="palavraChave" class="stcInput" style="width: 250px;" /></td>
 							<td><input id="btnPesquisar" type="submit" name="submit" style="margin-left: 20px; margin-bottom: 10px;"
 								value="Pesquisar" class="btn btn-primary"></td>

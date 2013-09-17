@@ -7,10 +7,10 @@
 
 <!-- HEADER -->
 <c:import url="/pages/header.jsp"/>
-<script type="text/javascript" src="/stc/js/setores.js"></script>
+<script type="text/javascript" src="/stc/js/fornecedores.js"></script>
 
 <!-- CSS -->
-<link href="/stc/css/setores.css" rel="stylesheet" />
+<link href="/stc/css/fornecedores.css" rel="stylesheet" />
 
 <!-- BODY -->
 <body>
@@ -21,8 +21,8 @@
 	<!-- CONTEUDO -->
 	<div id="body">
 		<div>
-			<h1>Setores</h1>
-			<hr class="stcHR1">
+			<h1>Fornecedores</h1>
+		  	<hr class="stcHR1">
 		</div>
 		<div class="conteudo-arg" style="height: 125px;">
 			<div id="divForm">
@@ -30,18 +30,18 @@
 				<form name="formApropriacao" method="POST" action="textInput.jsp"
 					class="stcFormApropriacao">
 					<fieldset>
-					<legend style="margin-bottom: 5px;" >Novo Setor</legend>
-					<table width="70%" border="0" cellspacing="0" cellpadding="0">
+					<legend style="margin-bottom: 5px;" >Novo Fornecedor</legend>
+					<table width="70%" border="0" cellspacing="0" cellpadding="2">
 						<tr>
 							<td style="vertical-align: top;">Nome</td>
 							<td style="vertical-align: top;">Descrição</td>
 						</tr>
 						<tr>
 							<td style="vertical-align: top;">
-                                <input type="text" id="nomeSetor" class="stcInput" style="margin-right: 15px; width: 300px;" />
+                                <input type="text" id="nomeFornecedor" class="stcInput" style="margin-right: 15px; width: 300px;" />
                             </td>
 							<td style="vertical-align: top;">
-                                <input type="text" id="nomeSetor" class="stcInput" style="margin-right: 5px; width: 300px;" />
+                                <input type="text" id="nomeFornecedor" class="stcInput" style="margin-right: 5px; width: 300px;" />
 							</td>
 							<td style="vertical-align: top;">
                                 <button id="salvar" class="btn btn-success" type="button" style="margin-bottom: 10px; min-width: 84px; margin-right: 5px;"><span aria-hidden="true" data-icon="&#xe0d3;"/> Salvar</button>
@@ -50,25 +50,26 @@
                                 <button id="cancelar" class="btn btn-danger" type="button" style="margin-bottom: 10px;  min-width: 103px;"><span aria-hidden="true" data-icon="&#xe0d6;"/> Cancelar</button>
                             </td>
 						</tr>
+						
 					</table>
 					</fieldset>
 				</form>
 			</div>
 		</div>
 		<div class="conteudoTabela">
-			<h4 style="float: left;">Setores</h4>
+			<h4 style="float: left;">Fornecedores</h4>
 			<div id="divTable">
 				<div>
-	  				<button id="excluirSetor" class="btn btn-danger" style="float: right;" type="button"><span aria-hidden="true" data-icon="&#xe0d2;"/> Excluir</button>
-					<button id="novoSetor" class="btn btn-primary" style="float: right; margin-right: 10px;" type="button"><span aria-hidden="true" data-icon="&#xe0d7;"/> Novo</button>
+	  				<button id="excluirFornecedor" class="btn btn-danger" style="float: right;" type="button"><span aria-hidden="true" data-icon="&#xe0d2;"/> Excluir</button>
+					<button id="novoFornecedor" class="btn btn-primary" style="float: right; margin-right: 10px;" type="button"><span aria-hidden="true" data-icon="&#xe0d7;"/> Novo</button>
 				</div>
-				 <table class="tbConsultaSetores">
+				 <table class="tbConsultaFornecedores">
                     <tr>
                      	<td>
                     		<input id="selectall" type="checkbox">
                         </td>
                         <td>
-                            Setor
+                            Fornecedor
                         </td>
                         <td >
                             Descrição
@@ -123,9 +124,8 @@
 		</div>
 	</div>
 
-
 	<!-- RODAPE -->
 	<c:import  url="/pages/rodape.jsp"/>
-
+	
 </body>
 </html>

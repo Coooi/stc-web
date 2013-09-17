@@ -6,7 +6,7 @@
 <div id="div-top">
 	<div id="divLogo">
 		<a href="/stc/home.jsp"> <img id="stc-logo"
-			src="/stc/midia/stc-logo.png" height="75px" width="75px" />
+			src="/stc/midia/stc-logo75.png" height="75px" width="75px" />
 		</a>
 	</div>
 	<div id="div-menu">
@@ -25,7 +25,8 @@
 					<li><a href="/stc/contas/receber.jsp"><span aria-hidden="true" data-icon="&#xe06f;"></span> Receber</a></li>
 				</ul></li>
 			<li><a href="/stc/caixa/caixa.jsp"><span aria-hidden="true" data-icon="&#xe079;"></span> Caixa</a></li>
-			<li><a href="/stc/contabilidade/contabilidade.jsp"><span aria-hidden="true" data-icon="&#xe006;"></span> Documentos Contador</a></li>
+			<li><a href="/stc/contabilidade/contabilidade.jsp"><span aria-hidden="true" data-icon="&#xe006;"></span> Docs. Contador</a></li>
+			<li><a href="/stc/fornecedores/fornecedores.jsp"><span aria-hidden="true" data-icon="&#xe094;"></span> Fornecedores</a></li>
 			<li><a href="/stc/setores/setores.jsp"><span aria-hidden="true" data-icon="&#xe020;"></span> Setores</a></li>
 		</ul>
 	</div>

@@ -1,16 +1,11 @@
-<%@page import="java.util.Locale"%>
-<%@page import="java.text.DateFormat"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"	pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>  
-<%@ page import="java.text.SimpleDateFormat, java.util.Date" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <!-- HEADER -->
 <jsp:include page="/pages/header.jsp"></jsp:include>
 
 <body>
-	
 	
 	<!-- TOP MENU -->
 	<c:import url="/pages/topMenu.jsp"></c:import>
@@ -19,11 +14,6 @@
 	
 	<div class="hero-unit" style="margin: 80px;">
         <h1>Bem vindo!</h1>
-        <%
-        DateFormat df = DateFormat.getDateInstance(DateFormat.FULL, new Locale("pt", "BR"));
-        String formattedDate = df.format(new Date());
-        getServletContext().setAttribute("data", formattedDate);
-        %>
         <h4>Hoje é ${applicationScope.data} </h4>
         <p><a href="/stc/apropriacao/novaApropriacao.jsp" class="btn btn-large btn-primary">Lançar</a>
         <a href="/stc/apropriacao/consultaApropriacao.jsp" class="btn btn-large btn-primary">Ver lançamentos »</a>

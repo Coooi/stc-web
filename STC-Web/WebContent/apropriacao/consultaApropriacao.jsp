@@ -43,9 +43,8 @@
 									<option value="2">Integral - Ouro Branco</option>
 									<option value="3">Adm. Central</option>
 							</select></td>
-							<td><input type="text"
-								id="dataEntrada" class="stcInput" /></td>
-							<td><input type="text" id="dataDocumento" class="stcInput" /></td>
+							<td><input type="text" id="dataEntrada" class="stcInput" style="width: 100px;" /></td>
+							<td><input type="text" id="dataDocumento" class="stcInput" style="width: 100px;" /></td>
 							<td><input type="text" id="palavraChave" class="stcInput"/></td>
 							<td><input id="btnPesquisar" type="submit" style="margin-left: 20px; margin-bottom: 10px;" name="submit"
 								value="Pesquisar" class="btn btn-primary"></td>
@@ -71,7 +70,7 @@
 				 <table class="tbConsultaAprop">
                     <tr>
                    		<td>
-                    		<input type="checkbox" value="del">
+                    		<input id="selectall" type="checkbox" value="del">
                         </td>
                         <td>
                             Data Entrada
@@ -152,6 +151,9 @@
 		jQuery(document).ready(function() {
 			var currentDate = new Date();
 			$("#arg-dataEntrada").datepicker("setDate", currentDate);
+			$('#selectall').change('click',function () {
+			    $('.tbConsultaAprop input').prop('checked', this.checked);
+			});
 		});
 	</script>
 </body>

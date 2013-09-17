@@ -103,6 +103,10 @@
     width: 70px;
 }
 
+#tbArgConsultaCaixa tr td{
+	padding-right: 5px;
+}
+
 .tbConsultaCaixa tr td:last-child{
 	text-align: center;
     width: 100px;

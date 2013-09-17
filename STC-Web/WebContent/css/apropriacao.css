@@ -107,3 +107,7 @@
 	text-align: center;
     width: 150px;
 }
+
+#tbArgConsultaAprop tr td{
+	padding-right: 5px;
+}

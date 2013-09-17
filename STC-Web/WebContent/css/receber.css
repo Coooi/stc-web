@@ -103,3 +103,7 @@
     width: 70px;
     text-align: center;
 }
+
+#tbArgConsultaReceber tr td{
+	padding-right: 5px;
+}

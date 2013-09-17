@@ -43,9 +43,8 @@
 									<option value="2">Integral - Ouro Branco</option>
 									<option value="3">Adm. Central</option>
 							</select></td>
-							<td><input type="text"
-								id="arg-dataInicio" class="stcInput" /></td>
-							<td><input type="text" id="arg-dataFim" class="stcInput" /></td>
+							<td><input type="text" id="arg-dataInicio" class="stcInput" style="width: 100px;" /></td>
+							<td><input type="text" id="arg-dataFim" class="stcInput" style="width: 100px;" /></td>
 							<td><input type="text" id="palavraChave" class="stcInput" style="width: 250px;"/></td>
 							<td><input id="btnPesquisar" type="submit" name="submit" style="margin-left: 20px; margin-bottom: 10px;"
 								value="Pesquisar" class="btn btn-primary"></td>

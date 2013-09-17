@@ -22,8 +22,7 @@
 		<div class="conteudo">
 			<div id="divForm">
 			
-				<form name="formApropriacao" method="POST" action="textInput.jsp"
-					class="stcFormApropriacao">
+				<form name="formApropriacao" method="POST" action="textInput.jsp" class="stcFormApropriacao">
 					<fieldset>
     				<legend>Laçamento</legend>
 					<table width="90%" border="0" cellspacing="0" cellpadding="0">
@@ -119,7 +118,7 @@
 									class="stcArea"></textarea></td>
 						</tr>
 						<tr>
-							<td><i class="icon-ban-circle"></i><input id="btnLancar" type="submit" name="submit"
+							<td><input id="btnLancar" type="submit" name="submit"
 								value="Lançar" class="btn btn-success"></td>
 						</tr>
 					</table>
