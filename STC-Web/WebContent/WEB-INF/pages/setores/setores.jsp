@@ -6,16 +6,16 @@
 <html>
 
 <!-- HEADER -->
-<c:import url="/pages/header.jsp"/>
-<script type="text/javascript" src="/stc/js/setores.js"></script>
+<jsp:include page="/WEB-INF/pages/header.jsp"></jsp:include>
+<script type="text/javascript" src="/stc/resources/js/setores.js"></script>
 
 <!-- CSS -->
-<link href="/stc/css/setores.css" rel="stylesheet" />
+<link href="/stc/resources/css/setores.css" rel="stylesheet" />
 
 <!-- BODY -->
 <body>
 	<!-- TOP MENU -->
-	<c:import url="/pages/topMenu.jsp"></c:import>
+	<jsp:include page="/WEB-INF/pages/topMenu.jsp"></jsp:include>
 	
 
 	<!-- CONTEUDO -->
@@ -79,10 +79,10 @@
   							<input type="checkbox" value="del">
                         </td>
                         <td >
-                            Adm. Central
+                            ${message}
                         </td>
                         <td>
-                            Outros
+                            ${message}
                         </td>
                     </tr>
                     <tr>
@@ -125,7 +125,7 @@
 
 
 	<!-- RODAPE -->
-	<c:import  url="/pages/rodape.jsp"/>
+	<jsp:include page="/WEB-INF/pages/rodape.jsp"></jsp:include>
 
 </body>
 </html>

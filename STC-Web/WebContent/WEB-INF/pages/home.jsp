@@ -3,12 +3,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <!-- HEADER -->
-<jsp:include page="/pages/header.jsp"></jsp:include>
+<jsp:include page="/WEB-INF/pages/header.jsp"></jsp:include>
 
 <body>
 	
 	<!-- TOP MENU -->
-	<c:import url="/pages/topMenu.jsp"></c:import>
+	<jsp:include page="/WEB-INF/pages/topMenu.jsp"></jsp:include>
 
 	<!-- CONTEUDO -->
 	
@@ -21,7 +21,7 @@
     </div>
     
 	<!-- RODAPE -->
-	<c:import url="/pages/rodape.jsp"></c:import>
+	<jsp:include page="/WEB-INF/pages/rodape.jsp"></jsp:include>
 
 	<script type="text/javascript"
 		src="http://code.jquery.com/jquery-1.9.1.min.js">

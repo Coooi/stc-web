@@ -4,13 +4,13 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<c:import url="/pages/header.jsp"/>
-<script src="/stc/js/novaApropriacao.js"></script>
-<script src="/stc/js/jquery.maskMoney.js"></script>
+<jsp:include page="/WEB-INF/pages/header.jsp"></jsp:include>
+<script src="/stc/resources/js/novaApropriacao.js"></script>
+<script src="/stc/resources/js/jquery.maskMoney.js"></script>
 
 <body>
 	<!-- TOP MENU -->
-	<c:import url="/pages/topMenu.jsp"></c:import>
+	<jsp:include page="/WEB-INF/pages/topMenu.jsp"></jsp:include>
 	
 
 	<!-- CONTEUDO -->
@@ -71,30 +71,28 @@
 						<tr>
 							<td colspan="3">
 								<div id="divPrazo" class="stcDivPrazo">
-									<h3 style="margin: 0;">Prazo</h3>
-									<hr class="stcHR2">
+									<fieldset style="margin-bottom: -15px;">
+										<legend>Prazo</legend>
+									</fieldset>
 									<p style="margin: 5px;">Nº de Parcelas</p>
-									<input type="text" id="numParcelasPrazo"
-										style="margin-left: 5px;" class="stcInput" />
+									<input type="text" id="numParcelasPrazo" name="numParcelasPrazo" style="margin-left: 5px;" class="stcInput" />
 								</div>
 							</td>
 						</tr>
 						<tr>
 							<td colspan="3">
 								<div id="divEntradaPrazo" class="stcDivPrazo">
-									<h3 style="margin: 0;">Entrada + Parcelas</h3>
-									<hr class="stcHR2">
-
+								<fieldset style="margin-bottom: -15px;">
+								<legend>Entrada + Parcelas</legend>
+								</fieldset>
 									<table>
 										<tr>
 											<td>Entrada</td>
 											<td>Nº de Parcelas</td>
 										</tr>
 										<tr>
-											<td><input type="text" id="vrEntrada" class="stcInput"
-												style="margin-right: 15px;" /></td>
-											<td><input type="text" id="numParcelasEntrada"
-												class="stcInput" /></td>
+											<td><input type="text" id="vrEntrada" name="vrEntrada" class="stcInput"	style="margin-right: 15px;" /></td>
+											<td><input type="text" id="numParcelasEntrada" name="numParcelasEntrada" class="stcInput" /></td>
 										</tr>
 									</table>
 								</div>
@@ -130,7 +128,7 @@
 
 
 	<!-- RODAPE -->
-	<c:import  url="/pages/rodape.jsp"/>
+	<jsp:include page="/WEB-INF/pages/rodape.jsp"></jsp:include>
 
 	<script type="text/javascript">
 		jQuery(document).ready(function() {

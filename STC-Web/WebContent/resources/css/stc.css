@@ -345,7 +345,7 @@ h4{
 	box-shadow: rgba(1, 1, 1, 0.701961) 0px 0px 15px 0px;
 	box-sizing: border-box;
 	padding: 15px;
-	height: 130px;
+	height: 123px;
 	width: 580px;
 	margin-bottom: 15px;
 	margin-top: 15px;
@@ -361,11 +361,11 @@ div.ui-datepicker{
 
 @font-face {
 	font-family: 'icomoon';
-	src:url('/stc/midia/svg/icomoon.eot');
-	src:url('/stc/midia/svg/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('/stc/midia/svg/icomoon.woff') format('woff'),
-		url('/stc/midia/svg/icomoon.ttf') format('truetype'),
-		url('/stc/midia/svg/icomoon.svg#icomoon') format('svg');
+	src:url('/stc/resources/midia/svg/icomoon.eot');
+	src:url('/stc/resources/midia/svg/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('/stc/resources/midia/svg/icomoon.woff') format('woff'),
+		url('/stc/resources/midia/svg/icomoon.ttf') format('truetype'),
+		url('/stc/resources/midia/svg/icomoon.svg#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }

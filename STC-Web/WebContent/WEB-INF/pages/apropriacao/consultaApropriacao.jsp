@@ -4,14 +4,14 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<c:import url="/pages/header.jsp" />
-<link href="/stc/css/apropriacao.css" rel="stylesheet" />
-<script src="/stc/js/stcNovaApropriacao.js"></script>
-<script src="/stc/js/jquery.maskMoney.js"></script>
+<jsp:include page="/WEB-INF/pages/header.jsp"></jsp:include>
+<link href="/stc/resources/css/apropriacao.css" rel="stylesheet" />
+<script src="/stc/resources/js/stcNovaApropriacao.js"></script>
+<script src="/stc/resources/js/jquery.maskMoney.js"></script>
 
 <body>
 	<!-- TOP MENU -->
-	<c:import url="/pages/topMenu.jsp"></c:import>
+	<jsp:include page="/WEB-INF/pages/topMenu.jsp"></jsp:include>
 
 
 	<!-- CONTEUDO -->
@@ -145,7 +145,7 @@
 
 
 	<!-- RODAPE -->
-	<c:import url="/pages/rodape.jsp" />
+	<jsp:include page="/WEB-INF/pages/rodape.jsp"></jsp:include>
 
 	<script type="text/javascript">
 		jQuery(document).ready(function() {
